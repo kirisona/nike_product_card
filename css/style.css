@@ -7,28 +7,33 @@ body {
                   url('../img/background/all.png');
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;  
+}
+
+.doc {
+    width: 810px;
+    margin: 0 auto;
 }
 
 .head {
-    width: 760px;
+    width: 760px;    
 }
 
 .head__logo {
-    position: absolute;
-    left: 65px;
-    top: 27px;
+    position: relative;
+    left: 46px;
+    top: 35px;
     width: 45px;
 }
 
 .menu {
-    position: absolute;
-    right: 195px;
-    top: 27px;
+    position: relative;
+    left: 200px;
+    top: 15px;
     display: flex;
     -webkit-justify-content: space-between;
             justify-content: space-between;
     width: 410px;
-    
 }
 
 .menu__item-link {
@@ -43,29 +48,184 @@ body {
 }
 
 .menu__byrger {
-    position: absolute;
-    top: 29px;
-    right: 63px;
+    position: relative;
+    top: 2px;
+    left: 762px;
 }
 
 .container {
     position: relative;
     top: 57px;
-    width: 805px;
+    width: 750px;
     height: 430px;
-    
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 50px 0 0 -25px rgba(255, 255, 255, 0.35), 
+    25px 0 0 -12.5px rgba(255, 255, 255, 0.35), -50px 0 0 -25px 
+    rgba(255, 255, 255, 0.35), -25px 0 0 -12.5px rgba(255, 255, 255, 0.35);
 }
 
 .bg {
     float: left;
     width: 67%;
-    background-color: #edeaeb;
-    background-image: url('bg-boots.png');
+    background-image: url('../img/background/text.png');
+    background-color: #f5f5f5;
+    z-index: 1;
+    position: relative;
 }
 
+.boots {
+    padding-top: 60px;
+    padding-left: 25px;
+}
 
+.gallery__link {
+    position: absolute;
+    left: 484px;
+    top: 300px;
+    font-size: 35px;
+    color: #000;
+    font-weight: 200;
+}
+
+.gallery-list {
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+        padding-left: 0;
+    
+}
+.gallery-list__item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.gallery-list__item + .gallery-list__item {
+    padding-left: 20px;
+    
+}
+
+.gallery-list__item:hover,
+.gallery-list__item:focus {
+    transform: scale(1.3);
+    transition: 0.5s ease-in;
+}
 
 .info {
     float: right;
     width: 33%;
+    background-color: #fff;
+    height: 461px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.info__title--small {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 25px;
+    width: 42px;
+    background-color: #ffa60d;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+}
+
+.info__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 13px;
+}
+
+.info__title--color {
+    color: #5e4fff;
+}
+
+.info-list {
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+        padding-top: 10px;
+}
+
+.info-list__text {
+    font-size: 12px;
+}
+
+.star {
+    width: 63px;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    padding-top: 9px;
+    padding-right: 66px;
+}
+
+.star__img--opacity {
+    opacity: 0.5;
+}
+
+.info__custom {
+    margin: 0;
+    font-size: 22px;    
+}
+
+.info__text {
+    font-size: 12px;
+    padding-top: 15px;
+}
+
+.size {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 187px; 
+    padding-bottom: 30px;     
+}
+
+.size__item {
+    border: 1px solid transparent;
+    height: 24px;
+    width: 24px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.size__item:hover,
+.size__item:focus {
+    border: 1px solid;
+    transform: scale(1.2);
+    transition: 0.5s ease-in;
+}
+
+.info__btn {
+    display: inline-block;
+    height: 30px;
+    width: 118px;
+    border: 1px solid #000;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    
+}
+
+.info__btn--margin {
+    margin-top: 10px;
+}
+
+.info__btn:hover,
+.info__btn:focus {
+    background-color: #a200b8;
+    border-color: #a200b8;
+    color: #fff;
 }
