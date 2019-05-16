@@ -1,0 +1,71 @@
+body {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1170px;
+    margin: 0 auto;
+    background-image: url('../img/background/textyre.png'), 
+                  url('../img/background/all.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head {
+    width: 760px;
+}
+
+.head__logo {
+    position: absolute;
+    left: 65px;
+    top: 27px;
+    width: 45px;
+}
+
+.menu {
+    position: absolute;
+    right: 195px;
+    top: 27px;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    width: 410px;
+    
+}
+
+.menu__item-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.menu__item-link:hover,
+.menu__item-list:focus {
+    text-decoration: underline;
+}
+
+.menu__byrger {
+    position: absolute;
+    top: 29px;
+    right: 63px;
+}
+
+.container {
+    position: relative;
+    top: 57px;
+    width: 805px;
+    height: 430px;
+    
+}
+
+.bg {
+    float: left;
+    width: 67%;
+    background-color: #edeaeb;
+    background-image: url('bg-boots.png');
+}
+
+
+
+.info {
+    float: right;
+    width: 33%;
+}
